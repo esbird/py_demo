@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章列表</title>
+</head>
+<body>
+    {% for article in list %}
+    <a href="{% url 'article_detail' article.id %}">{{article.title}}</a>
+    {% endfor %}
+    <!--<hr>-->
+    <!--<p>{{article.content}}</p>-->
+    {% for article in list %}
+    <a href="/article/{{article.id}}">{{article.title}}</a>
+    {% endfor %}
+</body>
+</html>

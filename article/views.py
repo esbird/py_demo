@@ -19,3 +19,8 @@ def article_detail(request, article_id):
     context = {}
     context['article'] = article
     return  render_to_response('article_detail.html',context)
+def acticle_list(request):
+    list = Article.objects.all()
+    context = {}
+    context['list'] = list
+    return  render_to_response('article_list.html',context)
