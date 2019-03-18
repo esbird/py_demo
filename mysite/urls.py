@@ -23,5 +23,6 @@ urlpatterns = [
     # path('admin/', xadmin.site.urls),
     path('article/',include('article.urls')),
     path('blog/',include('blog.urls')),
+    path('ckeditor',include('ckeditor_uploader.urls')),
 
 ]
