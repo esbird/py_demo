@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from . import views
 urlpatterns = [
     path('',views.home,name="home"),
+    path('socket',views.websocket_cli,name="socket"),
     path('admin/', admin.site.urls),
     # path('admin/', xadmin.site.urls),
     path('article/',include('article.urls')),
