@@ -26,7 +26,9 @@ urlpatterns = [
     # path('admin/', xadmin.site.urls),
     path('article/',include('article.urls')),
     path('blog/',include('blog.urls')),
-    path('ckeditor',include('ckeditor_uploader.urls')),
+    path('ckeditor/',include('ckeditor_uploader.urls')),
+    path('login/',views.login_fun,name="login"),
+    path('comment/',include('comment.urls'))
 
 ]
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

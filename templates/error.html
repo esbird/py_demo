@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %} 错误 {% endblock%}
+{% block header_extends %}
+<link rel="stylesheet" href="{% static 'home.css' %} ">
+
+{% endblock%}
+
+
+
+{% block home_active %} {% endblock%}
+
+
+
+
+{% block content %}
+<h2>{{message}}</h2>
+
+{% endblock%}
