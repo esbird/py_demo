@@ -28,6 +28,7 @@ urlpatterns = [
     path('blog/',include('blog.urls')),
     path('ckeditor/',include('ckeditor_uploader.urls')),
     path('login/',views.login_fun,name="login"),
+    path('loginout/',views.login_fun,name="loginout"),
     path('comment/',include('comment.urls'))
 
 ]
